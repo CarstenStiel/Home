@@ -30,7 +30,7 @@ export default {
   data: () => ({
     name_first: "Timothy",
     name_last: "Kriewald",
-    alter: 17,
+    alter: 23,
     gender: "männlich",
   }),
   computed: {
