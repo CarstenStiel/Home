@@ -1,12 +1,10 @@
 <template>
-  <div class="DeviceView">
-    <h1>Hier kommen die Geräte hin</h1>
+  <div class="w-full h-screen flex justify-center items-end">
+    <div>Test</div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
   name: "DeviceView",
 };

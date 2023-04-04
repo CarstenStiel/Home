@@ -1,13 +1,14 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
+  <div class="min-h-screen flex items-center justify-center">
+    <div class="home">
+      <img alt="Vue logo" src="../assets/logo.png" />
+    </div>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-
-export default {
-  name: "HomeView",
-};
-</script>
+<style>
+.home img {
+  max-width: 100%;
+  height: auto;
+}
+</style>
