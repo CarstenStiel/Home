@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  frontend:
+    container_name: zuhause-frontend
+    image: carstenstiel/frontend
+    volumes:
+      - "./:/app"
+    ports:
+      - "3000:8080"
+    networks:
+      - network_1
+    command: npm run serve
+
+networks:
+  network_1:
