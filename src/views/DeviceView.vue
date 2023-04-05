@@ -1,11 +1,5 @@
 <template>
-  <div class="w-full h-screen flex justify-center items-end">
-    <div>Test</div>
+  <div class="flex items-center justify-center h-screen">
+    <div class="text-xl">Hier sollen die Geräte eingestellt werden können!</div>
   </div>
 </template>
-
-<script>
-export default {
-  name: "DeviceView",
-};
-</script>

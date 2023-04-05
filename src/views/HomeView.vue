@@ -1,14 +1,20 @@
 <template>
-  <div class="min-h-screen flex items-center justify-center">
-    <div class="home">
-      <img alt="Vue logo" src="../assets/logo.png" />
+  <div class="flex items-center justify-center h-screen">
+    <div>
+      <img alt="Vue logo" class="mx-auto" src="../assets/logo.png" />
+      <div>
+        Willkommen Zuhause! Hier werden allgemeine Informationen dargestellt.
+      </div>
     </div>
   </div>
 </template>
 
-<style>
-.home img {
-  max-width: 100%;
-  height: auto;
-}
+<script>
+export default {
+  name: "HomeView",
+};
+</script>
+
+<style scoped>
+/* Optional: You can add styles for the parent div and/or the image */
 </style>

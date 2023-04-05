@@ -5,9 +5,23 @@
         <h1>{{ project }}</h1>
         <div>
           <nav>
-            <router-link to="/">Home</router-link> |
-            <router-link to="/about">About</router-link> |
-            <router-link to="/deviceView">Geräte</router-link>
+            <router-link to="/" class="my-link" active-class="my-link-active"
+              >Home</router-link
+            >
+            <span class="link-gap text-center">|</span>
+            <router-link
+              to="/about"
+              class="my-link"
+              active-class="my-link-active"
+              >About</router-link
+            >
+            <span class="link-gap text-center">|</span>
+            <router-link
+              to="/deviceView"
+              class="my-link"
+              active-class="my-link-active"
+              >Geräte</router-link
+            >
           </nav>
         </div>
       </div>
@@ -24,24 +38,24 @@ export default {
 </script>
 
 <style scoped>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
 nav {
-  padding: 30px;
-}
-
-nav a {
   font-weight: bold;
   color: #2c3e50;
 }
 
-nav a.router-link-exact-active {
+.link-gap {
+  display: inline-block;
+  width: 20px; /* adjust this value to change the size of the gap */
+}
+
+.my-link:hover {
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border-bottom: 1px solid;
+}
+
+.my-link-active {
   color: #42b983;
+  border-bottom: 1px solid;
 }
 </style>
