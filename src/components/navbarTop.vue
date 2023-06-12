@@ -10,17 +10,17 @@
             >
             <span class="link-gap text-center">|</span>
             <router-link
-              to="/about"
-              class="my-link"
-              active-class="my-link-active"
-              >About</router-link
-            >
-            <span class="link-gap text-center">|</span>
-            <router-link
               to="/deviceView"
               class="my-link"
               active-class="my-link-active"
               >Geräte</router-link
+            >
+            <span class="link-gap text-center">|</span>
+            <router-link
+              to="/about"
+              class="my-link"
+              active-class="my-link-active"
+              >About</router-link
             >
           </nav>
         </div>

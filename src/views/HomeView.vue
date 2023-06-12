@@ -2,7 +2,7 @@
   <div class="flex items-center justify-center h-screen">
     <div>
       <img alt="Vue logo" class="mx-auto" src="../assets/logo.png" />
-      <div>
+      <div class="text-xl text-center">
         Willkommen Zuhause! Hier werden allgemeine Informationen dargestellt.
       </div>
     </div>
