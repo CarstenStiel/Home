@@ -2,7 +2,7 @@
   <div>
     <div class="fixed w-full h-20 shadow-xl">
       <div class="flex justify-between items-center w-full h-full px-8">
-        <h1>{{ project }}</h1>
+        <h1 class="text-xl">{{ project }}</h1>
         <div>
           <nav>
             <router-link to="/" class="my-link" active-class="my-link-active"
@@ -46,6 +46,12 @@ nav {
 .link-gap {
   display: inline-block;
   width: 20px; /* adjust this value to change the size of the gap */
+}
+
+.my-link {
+  /*Textsize=xl*/
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .my-link:hover {
