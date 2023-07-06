@@ -8,7 +8,7 @@
         <div
           class="w-fit lg:text-2xl md:text-md font-extrabold tracking-wide uppercase ml-10 my-48 text-white bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500 rounded-md p-2"
         >
-          Willkommen Zuhause! Hier werden allgemeine Informationen dargestellt.
+          Willkommen Zuhause! Hier werden allgemeine Informationen dargestellt!
         </div>
         <div class="w-full flex justify-end">
           <div
