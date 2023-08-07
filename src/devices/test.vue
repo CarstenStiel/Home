@@ -1,11 +1,11 @@
 <template>
   <div class="flex flex-col text-center">
-    <Button :myFunctions="[fetchData, toggleDiv]" buttonText="Daten abrufen"
+    <Button :myFunctions="[toggleDiv, fetchData]" buttonText="Daten abrufen"
       >Daten abrufen</Button
     >
     <ul v-if="showDiv">
-      <li v-for="(value, key) in jsonData" :key="key">
-        {{ value.name }} - {{ value }}
+      <li>
+        {{ `http://${bridgeIP}/api/${username}/lights/` }}
       </li>
     </ul>
   </div>
@@ -31,6 +31,7 @@ export default {
   methods: {
     async fetchData() {
       try {
+        console.log("Test");
         const url = `http://${this.bridgeIP}/api/${this.username}/lights/`;
 
         const response = await fetch(url);

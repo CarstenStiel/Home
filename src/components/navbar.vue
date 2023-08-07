@@ -16,7 +16,7 @@
             </li>
             <li class="flex flex-col items-center group mx-6">
               <router-link
-                to="/deviceView"
+                to="/devices"
                 class="my-link"
                 active-class="my-link-active"
                 >Geräte</router-link
@@ -24,29 +24,11 @@
             </li>
             <li class="flex flex-col items-center group mx-6">
               <router-link
-                to="/test1"
+                to="/test"
                 class="my-link"
                 active-class="my-link-active"
               >
-                Test1
-              </router-link>
-            </li>
-            <li class="flex flex-col items-center group mx-6">
-              <router-link
-                to="/test2"
-                class="my-link"
-                active-class="my-link-active"
-              >
-                Test2
-              </router-link>
-            </li>
-            <li class="flex flex-col items-center group mx-6">
-              <router-link
-                to="/test3"
-                class="my-link"
-                active-class="my-link-active"
-              >
-                Test3
+                Test
               </router-link>
             </li>
           </ul>
