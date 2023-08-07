@@ -1,13 +1,13 @@
 <template>
-  <header class="fixed w-full z-30 backdrop-blur-sm">
+  <header class="absolute w-full z-30 backdrop-blur-sm">
     <div
       class="max-w-7xl mx-auto flex flex-col relative text-base text-gray-200"
     >
       <div class="flex items-center justify-between py-4 px-6 h-20">
         <div class="flex-shrink-0 mr-4 w-64">
-          <h1 class="text-xl text-indigo-800 font-bold">{{ project }}</h1>
+          <h1 class="text-xl">{{ project }}</h1>
         </div>
-        <nav class="hidden xl:flex flex-grow">
+        <nav class="flex flex-grow">
           <ul class="flex flex-grow justify-center flex-wrap items-center">
             <li class="flex flex-col items-center group mx-6">
               <router-link to="/" class="my-link" active-class="my-link-active">
@@ -61,7 +61,7 @@
 
           <router-link
             to="/about"
-            class="px-4 text-indigo-600 font-bold text-lg border-b-0 border-transparent transition duration-500 hover:border-b-2 hover:border-b-indigo-600"
+            class="px-4 text-lg border-b-0 border-transparent transition duration-500 hover:border-b-2 hover:border-b-indigo-600"
             >About</router-link
           >
         </div>
@@ -81,8 +81,8 @@ export default {
 
 <style scoped>
 .my-link {
-  font-weight: 600;
-  color: rgb(79 70 229);
+  font-weight: 500;
+  //color: rgb(79 70 229);
   /* Textsize=xl */
   font-size: 1.25rem;
   line-height: 1.75rem;
