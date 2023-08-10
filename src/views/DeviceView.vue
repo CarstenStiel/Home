@@ -21,10 +21,8 @@
       <div
         class="h-full w-1/4 m-5 flex flex-col items-center rounded shadow-2xl"
       >
-        <div class="text-xl mt-20">
-          Hier sollen die Hue Geräte angezeigt werden!
-        </div>
-        <Devices class="mt-5 overflow-auto"></Devices>
+        <div class="text-xl text-center mt-20">Schalte Lampe ein:</div>
+        <Devices class="mt-5 overflow-auto" :onClick="this.fetchData"></Devices>
       </div>
       <div class="h-full w-1/4 m-5 bg-white flex flex-col rounded shadow-2xl">
         <div class="text-xl my-10 flex justify-center">Geräte im System:</div>

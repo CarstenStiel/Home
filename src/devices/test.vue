@@ -26,7 +26,7 @@ export default {
       username: "",
       bridgeIP: "",
       showDiv: false,
-      status: false,
+      status: true,
       url: "",
       setUrl: "",
     };
@@ -50,16 +50,13 @@ export default {
       return information.hue;
     },
     setStatus() {
-      //prettier-ignore
-      const requestPayload = { "on": this.status }
-
       console.log(this.setUrl);
       console.log(this.status);
-      console.log(requestPayload);
 
       const requestOptions = {
         method: "PUT",
-        body: JSON.stringify(requestPayload),
+        //prettier-ignore
+        body: JSON.stringify({ "on": this.status }),
       };
       fetch(this.setUrl, requestOptions).then((response) =>
         console.log(response.json())
