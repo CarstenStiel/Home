@@ -1,13 +1,8 @@
 <template>
   <div class="flex flex-col text-center">
-    <Button :myFunctions="[toggleDiv, fetchData]" buttonText="Daten abrufen"
-      >Daten abrufen</Button
+    <Button :myFunctions="[setStatus]" buttonText="Daten abrufen"
+      >Licht an/aus</Button
     >
-    <ul v-if="showDiv">
-      <li>
-        {{ `http://${bridgeIP}/api/${username}/lights/` }}
-      </li>
-    </ul>
   </div>
 </template>
 
@@ -15,26 +10,31 @@
 import Button from "@/components/buttons/defaultButton.vue";
 import information from "@/data/sensitiveData.json";
 export default {
-  // eslint-disable-next-line vue/multi-word-component-names
   name: "Devices",
   components: {
     Button: Button,
   },
+  created() {
+    this.username = this.hueInfo().username;
+    this.bridgeIP = this.hueInfo().bridgeIP;
+    this.url = `http://${this.bridgeIP}/api/${this.username}/lights/`;
+    this.setUrl = `http://${this.bridgeIP}/api/${this.username}/lights/1/state`;
+  },
   data() {
     return {
       jsonData: null,
-      username: this.hueInfo().username,
-      bridgeIP: this.hueInfo().bridgeIP,
+      username: "",
+      bridgeIP: "",
       showDiv: false,
+      status: false,
+      url: "",
+      setUrl: "",
     };
   },
   methods: {
     async fetchData() {
       try {
-        console.log("Test");
-        const url = `http://${this.bridgeIP}/api/${this.username}/lights/`;
-
-        const response = await fetch(url);
+        const response = await fetch(this.url);
         if (!response.ok) {
           throw new Error("Fehler beim Abrufen der Daten.");
         }
@@ -48,6 +48,24 @@ export default {
     },
     hueInfo: function () {
       return information.hue;
+    },
+    setStatus() {
+      //prettier-ignore
+      const requestPayload = { "on": this.status }
+
+      console.log(this.setUrl);
+      console.log(this.status);
+      console.log(requestPayload);
+
+      const requestOptions = {
+        method: "PUT",
+        body: JSON.stringify(requestPayload),
+      };
+      fetch(this.setUrl, requestOptions).then((response) =>
+        console.log(response.json())
+      );
+
+      this.status = !this.status;
     },
   },
 };

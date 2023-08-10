@@ -24,17 +24,18 @@
         <div class="text-xl mt-20">
           Hier sollen die Hue Geräte angezeigt werden!
         </div>
-        <Devices class="mt-5"></Devices>
+        <Devices class="mt-5 overflow-auto"></Devices>
       </div>
       <div class="h-full w-1/4 m-5 bg-white flex flex-col rounded shadow-2xl">
         <div class="text-xl my-10 flex justify-center">Geräte im System:</div>
-        <ul class="h-full w-full flex flex-col">
+        <ul class="h-full w-full flex flex-col overflow-auto">
           <li
             v-for="(value, key) in jsonData"
             :key="key"
-            class="text-center m-10 rounded"
+            class="text-center m-10 flex justify-between rounded-md p-2 shadow-2xl"
           >
-            {{ value.name }} - {{ check(value.state.on) }}
+            <span>{{ value.name }}</span>
+            <span>{{ check(value.state.on) }}</span>
           </li>
         </ul>
       </div>
