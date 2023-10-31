@@ -20,7 +20,7 @@
               </a>
             </div>
           </div>
-          <div class="flex-1 flex flex-col lg:flex-row justify-between">
+          <div class="flex-1 flex flex-col sm:flex-row justify-between">
             <div class="w-full lg:w-1/4 mb-8 xl:mb-0 xl:px-4">
               <div
                 class="font-semibold text-gray-100 mb-4 uppercase font-red-hat-display"

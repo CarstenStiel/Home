@@ -38,59 +38,75 @@
             Ideen für Dinge, die man hier einfügen kann!
           </p>
         </div>
-        <div class="grid my-10">
-          <div class="md:grid md:grid-cols-12 md:gap-6 items-center">
+        <div class="grid my-20" data-v-9ea40744="">
+          <div
+            class="md:grid md:grid-cols-12 md:gap-6 items-center"
+            data-v-9ea40744=""
+          >
             <div
-              class="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 order-first"
+              class="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1"
+              data-v-9ea40744=""
             >
               <img
                 src="https://cdn.swiftdesk.io/marketing/assets/images/screenshots/swiftdesk-customer-support-software-shared-inbox.png"
-                width="540"
+                width="500"
                 height="405"
                 alt="SwiftDesk - Shared Inbox"
                 class="max-w-full mx-auto md:max-w-none h-auto screenshot"
+                data-v-9ea40744=""
               />
             </div>
             <div
-              class="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6"
+              class="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 order-2"
+              data-v-9ea40744=""
             >
-              <div class="md:pr-4 lg:pr-12 xl:pr-16">
+              <div class="md:pr-4 lg:pr-12 xl:pr-16" data-v-9ea40744="">
                 <div
                   class="font-architects-daughter text-xl text-primary-500 mb-2"
+                  data-v-9ea40744=""
                 >
                   Test
                 </div>
-                <h3 class="h3 mb-3">Test Beschreibung</h3>
-                <p class="text-xl text-gray-700 dark:text-gray-400 mb-4">
+                <h3 class="h3 mb-3" data-v-9ea40744="">Test Beschreibung</h3>
+                <p
+                  class="text-xl text-gray-700 dark:text-gray-400 mb-4"
+                  data-v-9ea40744=""
+                >
                   Hier soll ggf. die minimierte Version von einem Tab
                   erscheinen!
                 </p>
-                <ul class="text-lg text-gray-700 dark:text-gray-400 mb-8">
-                  <li class="flex items-center mb-2">
+                <ul
+                  class="text-lg text-gray-700 dark:text-gray-400 mb-8"
+                  data-v-9ea40744=""
+                >
+                  <li class="flex items-center mb-2" data-v-9ea40744="">
                     <svg
                       viewBox="0 0 12 12"
                       xmlns="http://www.w3.org/2000/svg"
                       class="w-3 h-3 fill-current text-teal-500 mr-2 flex-shrink-0"
+                      data-v-9ea40744=""
                     >
                       <path
                         d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"
-                      ></path>
-                    </svg>
-                    <span>TEST</span>
+                        data-v-9ea40744=""
+                      ></path></svg
+                    ><span data-v-9ea40744="">TEST</span>
                   </li>
                 </ul>
                 <div
                   class="flex items-center mt-6 text-primary-500 hover:text-primary-600 hover:underline"
+                  data-v-9ea40744=""
                 >
-                  <svg class="feather feather-xs">
+                  <svg class="feather feather-xs" data-v-9ea40744="">
                     <use
                       xlink:href="/images/svg/feather-sprite.svg#arrow-right-circle"
-                    ></use>
-                  </svg>
-                  <a
+                      data-v-9ea40744=""
+                    ></use></svg
+                  ><a
                     href="/"
                     title="SwiftDesk - Shared Inboxes"
                     class="ml-2 hover:text-primary-600 hover:underline"
+                    data-v-9ea40744=""
                     >Weiterleitung</a
                   >
                 </div>
@@ -102,17 +118,6 @@
         <div class="grid my-20">
           <div class="md:grid md:grid-cols-12 md:gap-6 items-center">
             <div
-              class="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1"
-            >
-              <img
-                src="https://cdn.swiftdesk.io/marketing/assets/images/screenshots/swiftdesk-customer-support-software-shared-inbox.png"
-                width="540"
-                height="405"
-                alt="SwiftDesk - Shared Inbox"
-                class="max-w-full mx-auto md:max-w-none h-auto screenshot"
-              />
-            </div>
-            <div
               class="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6"
             >
               <div class="md:pr-4 lg:pr-12 xl:pr-16">
@@ -156,6 +161,17 @@
                   >
                 </div>
               </div>
+            </div>
+            <div
+              class="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-2"
+            >
+              <img
+                src="https://cdn.swiftdesk.io/marketing/assets/images/screenshots/swiftdesk-customer-support-software-shared-inbox.png"
+                width="500"
+                height="405"
+                alt="SwiftDesk - Shared Inbox"
+                class="max-w-full mx-auto md:max-w-none h-auto screenshot"
+              />
             </div>
           </div>
         </div>
