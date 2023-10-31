@@ -6,10 +6,5 @@ services:
     volumes:
       - "./:/app"
     ports:
-      - "3000:8080"
-    networks:
-      - network_1
+      - "8080:8080"
     command: npm run serve
-
-networks:
-  network_1:
