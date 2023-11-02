@@ -28,7 +28,7 @@
                 class="my-link"
                 active-class="my-link-active"
               >
-                Test
+                GitTest
               </router-link>
             </li>
           </ul>

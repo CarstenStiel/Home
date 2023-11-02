@@ -15,7 +15,7 @@ COPY . .
 RUN npm run build
 
 # Port freigeben
-EXPOSE 8080
+EXPOSE 32768
 
 # App-Startpunkt definieren
-CMD ["npm", "run", "serve"]
+CMD ["npm", "run", "serve", "--", "--port", "32768"]
