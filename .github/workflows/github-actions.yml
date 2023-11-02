@@ -25,4 +25,3 @@ jobs:
         run: |
           ls /home/runner/work/Home/Home
           pwd
-        shell: /bin/bash
