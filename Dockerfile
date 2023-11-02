@@ -12,7 +12,7 @@ RUN npm install
 COPY . .
 
 # App bauen
-RUN npm run build
+RUN npm run serve
 
 # Port freigeben
 EXPOSE 32768
