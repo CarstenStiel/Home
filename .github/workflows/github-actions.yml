@@ -23,6 +23,6 @@ jobs:
         uses: docker/setup-buildx-action@v3
       - name: Testing repo
         run: |
-          ls
+          ls /home/runner/work/Home/Home
           pwd
         shell: /bin/bash
