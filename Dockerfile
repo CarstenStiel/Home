@@ -12,6 +12,8 @@ RUN npm install
 COPY . .
 
 # App bauen
+# RUN npm run build
+# Server wird wegen dem fehlen der sensielen Daten in Git genutzt
 RUN npm run serve
 
 # Port freigeben
