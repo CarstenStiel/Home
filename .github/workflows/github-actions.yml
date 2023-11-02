@@ -15,8 +15,7 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker buildx create --use
-          docker buildx build --file ../../Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_IMAGE_NAME }}:latest .
+          docker build --file ../../Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_IMAGE_NAME }}:latest .
         working-directory: ../../
 
       - name: Log in to Docker Hub
