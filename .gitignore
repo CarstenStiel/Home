@@ -2,7 +2,7 @@
 node_modules
 /dist
 
-src/data/
+src/data/sensitiveData.json
 
 
 # local env files
