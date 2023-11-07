@@ -6,6 +6,7 @@ WORKDIR /app
 
 # Abhängigkeiten installieren
 COPY package*.json ./
+
 RUN npm install
 
 # App-Code kopieren
@@ -15,6 +16,8 @@ COPY . .
 # RUN npm run build
 # Server wird wegen dem fehlen der sensielen Daten in Git genutzt
 RUN npm run serve
+
+COPY . /app
 
 # Port freigeben
 EXPOSE 32768
