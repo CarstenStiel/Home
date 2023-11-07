@@ -1,4 +1,4 @@
-name: ci
+name: ci/cd docker push
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - "main"
 
 jobs:
-  build:
+  build_and_push:
     runs-on: self-hosted
     steps:
       -
