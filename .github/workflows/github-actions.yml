@@ -7,10 +7,14 @@ on:
   pull_request:
     types:
       - closed
+    branches:
+      - "main"
 
 jobs:
   build_and_push:
-    runs-on: [self-hosted, ubuntu-latest]
+    runs-on:
+      - self-hosted
+      - ubuntu-latest
     steps:
       -
         name: Checkout
