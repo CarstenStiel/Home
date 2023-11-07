@@ -1,23 +1,22 @@
-# Basisimage festlegen
-FROM node:14-alpine
+FROM node:lts-alpine
 
-# Arbeitsverzeichnis festlegen
+# install simple http server for serving static content
+RUN npm install -g http-server
+
+# make the 'app' folder the current working directory
 WORKDIR /app
 
-# Abhängigkeiten installieren
+# copy both 'package.json' and 'package-lock.json' (if available)
 COPY package*.json ./
 
+# install project dependencies
 RUN npm install
 
-# App-Code kopieren
+# copy project files and folders to the current working directory (i.e. 'app' folder)
 COPY . .
 
-# App bauen
-# RUN npm run build
-# Server wird wegen dem fehlen der sensielen Daten in Git genutzt
-RUN npm run serve
-
-COPY . /app
+# build app for production with minification
+RUN npm run build
 
 # Port freigeben
 EXPOSE 32768
