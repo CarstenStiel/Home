@@ -14,14 +14,15 @@
                 Home
               </router-link>
             </li>
-            <li class="flex flex-col items-center group mx-6">
-              <router-link
-                to="/devices"
-                class="my-link"
-                active-class="my-link-active"
-                >Geräte</router-link
-              >
-            </li>
+            <li v-if="shouldShowDevicesRoute" class="flex flex-col items-center group mx-6">
+      <router-link
+        to="/devices"
+        class="my-link"
+        active-class="my-link-active"
+      >
+        Geräte
+      </router-link>
+    </li>
             <li class="flex flex-col items-center group mx-6">
               <router-link
                 to="/test"
@@ -54,9 +55,16 @@
 </template>
 
 <script>
+import sensitiveData from "../data/sensitiveData.json";
 export default {
   data() {
     return { project: "Zuhause" };
+  },
+  computed: {
+    shouldShowDevicesRoute() {
+      // Überprüfe, ob Name und Passwort in sensitiveData.json nicht leer sind
+      return sensitiveData.hue.username && sensitiveData.hue.bridgeIP;
+    },
   },
 };
 </script>

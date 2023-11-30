@@ -6,5 +6,5 @@ services:
     volumes:
       - "./:/app"
     ports:
-      - "8080:8080"
+      - "32768:32768"
     command: npm run serve
