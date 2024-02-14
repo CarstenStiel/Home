@@ -12,6 +12,11 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
   },
+    {
+    path: "/settings",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/SettingsView.vue"),
+  },
 ];
 
 // Überprüfung, ob Name und Passwort in sensitiveData.json nicht leer sind

@@ -16,15 +16,17 @@
     </div>
   </div>
 
-  <div class="flex flex-col h-screen">
+  <div class="flex flex-col h-fit">
     <div class="flex flex-row h-1/2 justify-center">
       <div
-        class="h-full w-1/4 m-5 flex flex-col items-center rounded shadow-2xl"
+        class="h-full w-1/4 m-5 bg-white flex flex-col rounded-lg shadow-2xl"
       >
-        <div class="text-xl text-center mt-20">Schalte Lampe ein:</div>
-        <Devices class="mt-5 overflow-auto" :onClick="this.fetchData"></Devices>
+        <div class="text-xl my-10 flex justify-center">Schalte Lampen ein:</div>
+        <Devices class="m-5" :onClick="this.fetchData"></Devices>
       </div>
-      <div class="h-full w-1/4 m-5 bg-white flex flex-col rounded shadow-2xl">
+      <div
+        class="h-full w-1/4 m-5 bg-white flex flex-col rounded-lg shadow-2xl"
+      >
         <div class="text-xl my-10 flex justify-center">Geräte im System:</div>
         <ul class="h-full w-full flex flex-col overflow-auto">
           <li
